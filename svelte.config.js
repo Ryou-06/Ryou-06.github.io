@@ -6,9 +6,12 @@ const config = {
     preprocess: vitePreprocess(),
 
     kit: {
+		paths: {
+			base: '/ryou-06.github.io' // Use your actual repository name
+		},
         adapter: adapter({
-            pages: "dist", // Change this to 'dist' instead of 'build'
-            assets: "dist", // Change this to 'dist' instead of 'build'
+            pages: "dist", 
+            assets: "dist", 
             fallback: 'index.html', 
             precompress: false, 
             strict: true 
