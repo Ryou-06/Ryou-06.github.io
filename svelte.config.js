@@ -7,7 +7,7 @@ const config = {
 
     kit: {
 		paths: {
-			base: '/ryou-06.github.io' // Use your actual repository name
+			base: '/Ryou-06.github.io'
 		},
         adapter: adapter({
             pages: "dist", 
