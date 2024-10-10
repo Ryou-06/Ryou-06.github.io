@@ -19,9 +19,7 @@ const config = {
 			strict: true 
 		}),
 
-		paths: {
-			base: '/https://github.com/Ryou-06/Ryou-06.github.io'
-		},
+		
 		prerender: {
 			handleHttpError: ({ path, status }) => {
 				// Log or handle 404 errors gracefully during the build
