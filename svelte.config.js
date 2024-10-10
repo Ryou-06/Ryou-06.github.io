@@ -10,7 +10,7 @@ const config = {
 	kit: {
 		// Set the base path if your app is deployed to a subdirectory
 		paths: {
-			base: 'https://github.com/Ryou-06/Ryou-06.github.io' // Change '/my-app' to your desired base path
+			base: '/https://github.com/Ryou-06/Ryou-06.github.io' // Change '/my-app' to your desired base path
 		},
 		adapter: adapter({ 
 			pages: "build", 
