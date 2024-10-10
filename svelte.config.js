@@ -8,17 +8,19 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// Use the static adapter for deployment
+		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({ 
 			pages: "build", 
 			assets: "build", 
 			fallback: 'index.html', 
-			precompress: true, 
+			precompress: false, 
 			strict: true 
 		}),
-		// Set the base path for deployment
+
 		paths: {
-			base: '/Ryou-06.github.io'  // Replace with your actual base path
+			base: '/https://github.com/Ryou-06/Ryou-06.github.io'
 		},
 		prerender: {
 			handleHttpError: ({ path, status }) => {
