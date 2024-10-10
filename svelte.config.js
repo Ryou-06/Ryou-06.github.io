@@ -7,11 +7,6 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
-	kit: {
-		// Set the base path if your app is deployed to a subdirectory
-		paths: {
-			base: '/https://github.com/Ryou-06/Ryou-06.github.io' // Change '/my-app' to your desired base path
-		},
 		adapter: adapter({ 
 			pages: "build", 
 			assets: "build", 
@@ -28,7 +23,6 @@ const config = {
 				}
 			}
 		}
-	}
 };
 
 export default config;
