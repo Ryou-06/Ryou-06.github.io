@@ -18,7 +18,7 @@ const config = {
 		}),
 		// Set the base path for deployment
 		paths: {
-			base: '/repository-name'  // Replace with your actual base path
+			base: '/Ryou-06.github.io'  // Replace with your actual base path
 		},
 		prerender: {
 			handleHttpError: ({ path, status }) => {
