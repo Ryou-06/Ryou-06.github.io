@@ -28,17 +28,17 @@ jobs:
       - name: Build SvelteKit app
         run: npm run build
         
-      - name: Check if build directory exists
+      - name: Check if dist directory exists
         run: |
-          if [ ! -d "build" ]; then
-            echo "Build directory not found!"
+          if [ ! -d "dist" ]; then  # Updated from 'build' to 'dist'
+            echo "Dist directory not found!"
             exit 1
           fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'build/'
+          path: 'dist/'  # Updated from 'build/' to 'dist/'
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
